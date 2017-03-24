@@ -18,6 +18,7 @@
 		180474AF1E851E4D00BCA299 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474AE1E851E4D00BCA299 /* EventController.swift */; };
 		180474B11E851F3500BCA299 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B01E851F3500BCA299 /* AboutController.swift */; };
 		180474B31E851F9600BCA299 /* EventBetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B21E851F9600BCA299 /* EventBetController.swift */; };
+		18DE186B1E852AE40003B049 /* EventChris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE186A1E852AE40003B049 /* EventChris.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		180474AE1E851E4D00BCA299 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		180474B01E851F3500BCA299 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		180474B21E851F9600BCA299 /* EventBetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBetController.swift; sourceTree = "<group>"; };
+		18DE186A1E852AE40003B049 /* EventChris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventChris.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		1804747D1E851BF000BCA299 /* betclic-ios */ = {
 			isa = PBXGroup;
 			children = (
+				18DE18691E8529CA0003B049 /* model */,
 				180474B41E851FB900BCA299 /* controller */,
 				1804747E1E851BF000BCA299 /* AppDelegate.swift */,
 				180474801E851BF000BCA299 /* ViewController.swift */,
@@ -143,6 +146,14 @@
 				180474B21E851F9600BCA299 /* EventBetController.swift */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		18DE18691E8529CA0003B049 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18DE186A1E852AE40003B049 /* EventChris.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				180474B11E851F3500BCA299 /* AboutController.swift in Sources */,
 				180474AD1E851D2E00BCA299 /* EventListController.swift in Sources */,
 				180474AF1E851E4D00BCA299 /* EventController.swift in Sources */,
+				18DE186B1E852AE40003B049 /* EventChris.swift in Sources */,
 				1804747F1E851BF000BCA299 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +541,7 @@
 				180474A51E851BF000BCA299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180474A61E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +550,7 @@
 				180474A81E851BF000BCA299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180474A91E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +559,7 @@
 				180474AB1E851BF000BCA299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
