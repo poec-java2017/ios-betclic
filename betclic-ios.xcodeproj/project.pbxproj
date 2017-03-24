@@ -19,6 +19,9 @@
 		180474B11E851F3500BCA299 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B01E851F3500BCA299 /* AboutController.swift */; };
 		180474B31E851F9600BCA299 /* EventBetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B21E851F9600BCA299 /* EventBetController.swift */; };
 		18DE186B1E852AE40003B049 /* EventChris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE186A1E852AE40003B049 /* EventChris.swift */; };
+		180474C31E854F8B00BCA299 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474C11E854F8B00BCA299 /* AuthenticationService.swift */; };
+		180474C41E854F8B00BCA299 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474C21E854F8B00BCA299 /* ServiceConfig.swift */; };
+		180474CD1E85553900BCA299 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474CC1E85553900BCA299 /* AuthenticationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,10 @@
 		180474B01E851F3500BCA299 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		180474B21E851F9600BCA299 /* EventBetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBetController.swift; sourceTree = "<group>"; };
 		18DE186A1E852AE40003B049 /* EventChris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventChris.swift; sourceTree = "<group>"; };
+		180474C11E854F8B00BCA299 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		180474C21E854F8B00BCA299 /* ServiceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		180474C71E8550B000BCA299 /* betclic-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betclic-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		180474CC1E85553900BCA299 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +114,9 @@
 		1804747D1E851BF000BCA299 /* betclic-ios */ = {
 			isa = PBXGroup;
 			children = (
-				18DE18691E8529CA0003B049 /* model */,
+				180474CA1E85549500BCA299 /* model */,
+				180474C51E854F9200BCA299 /* config */,
+				180474C01E854ED600BCA299 /* service */,
 				180474B41E851FB900BCA299 /* controller */,
 				1804747E1E851BF000BCA299 /* AppDelegate.swift */,
 				180474801E851BF000BCA299 /* ViewController.swift */,
@@ -148,12 +157,37 @@
 			name = controller;
 			sourceTree = "<group>";
 		};
-		18DE18691E8529CA0003B049 /* model */ = {
+		180474C01E854ED600BCA299 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				18DE186A1E852AE40003B049 /* EventChris.swift */,
+				180474C11E854F8B00BCA299 /* AuthenticationService.swift */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		180474C51E854F9200BCA299 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				180474C21E854F8B00BCA299 /* ServiceConfig.swift */,
+				180474C71E8550B000BCA299 /* betclic-ios-Bridging-Header.h */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		180474CA1E85549500BCA299 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				180474CB1E85549C00BCA299 /* response */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		180474CB1E85549C00BCA299 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				180474CC1E85553900BCA299 /* AuthenticationResponse.swift */,
+			);
+			name = response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +258,7 @@
 				TargetAttributes = {
 					1804747A1E851BF000BCA299 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					1804748E1E851BF000BCA299 = {
@@ -291,12 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				180474B31E851F9600BCA299 /* EventBetController.swift in Sources */,
+				180474CD1E85553900BCA299 /* AuthenticationResponse.swift in Sources */,
 				180474811E851BF000BCA299 /* ViewController.swift in Sources */,
 				180474B11E851F3500BCA299 /* AboutController.swift in Sources */,
 				180474AD1E851D2E00BCA299 /* EventListController.swift in Sources */,
 				180474AF1E851E4D00BCA299 /* EventController.swift in Sources */,
 				18DE186B1E852AE40003B049 /* EventChris.swift in Sources */,
+				180474C41E854F8B00BCA299 /* ServiceConfig.swift in Sources */,
 				1804747F1E851BF000BCA299 /* AppDelegate.swift in Sources */,
+				180474C31E854F8B00BCA299 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,10 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "betclic-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "betclic-ios/betclic-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -460,10 +501,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "betclic-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "betclic-ios/betclic-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
