@@ -21,6 +21,8 @@
 		180474C31E854F8B00BCA299 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474C11E854F8B00BCA299 /* AuthenticationService.swift */; };
 		180474C41E854F8B00BCA299 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474C21E854F8B00BCA299 /* ServiceConfig.swift */; };
 		180474CD1E85553900BCA299 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474CC1E85553900BCA299 /* AuthenticationResponse.swift */; };
+		180474D01E856D3100BCA299 /* BaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474CF1E856D3100BCA299 /* BaseQuery.swift */; };
+		180474D21E856E2A00BCA299 /* AuthenticationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		180474C21E854F8B00BCA299 /* ServiceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
 		180474C71E8550B000BCA299 /* betclic-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betclic-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		180474CC1E85553900BCA299 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
+		180474CF1E856D3100BCA299 /* BaseQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuery.swift; sourceTree = "<group>"; };
+		180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 		180474CA1E85549500BCA299 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				180474CE1E856D1800BCA299 /* query */,
 				180474CB1E85549C00BCA299 /* response */,
 			);
 			name = model;
@@ -186,6 +191,15 @@
 				180474CC1E85553900BCA299 /* AuthenticationResponse.swift */,
 			);
 			name = response;
+			sourceTree = "<group>";
+		};
+		180474CE1E856D1800BCA299 /* query */ = {
+			isa = PBXGroup;
+			children = (
+				180474CF1E856D3100BCA299 /* BaseQuery.swift */,
+				180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */,
+			);
+			name = query;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				180474B31E851F9600BCA299 /* EventBetController.swift in Sources */,
+				180474D01E856D3100BCA299 /* BaseQuery.swift in Sources */,
+				180474D21E856E2A00BCA299 /* AuthenticationQuery.swift in Sources */,
 				180474CD1E85553900BCA299 /* AuthenticationResponse.swift in Sources */,
 				180474811E851BF000BCA299 /* ViewController.swift in Sources */,
 				180474B11E851F3500BCA299 /* AboutController.swift in Sources */,

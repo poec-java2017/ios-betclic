@@ -11,24 +11,24 @@ import Foundation
 class ServiceConfig {
     
     static private let apiScheme = "http"
-    static private let apiHost = "m2i.xylphid.net/api"
-    static private let apiKeyPub = "K2ZaSYczA13ppgXetAofyBFk0oJKB7o5"
+    static private let apiHost = "m2i.xylphid.net"
+    static public let apiKeyPub = "K2ZaSYczA13ppgXetAofyBFk0oJKB7o5"
     static private let apiKeyPriv = "POXTy7dit0WFQ5YtHMEqocsS9xagfoYbFgvFGRXWy3QY1diohZCFu4S1Th8vGbl3rtLB8874t1E5NI27QucZm3MeZS73RmCwv9dH3rS0af63DU2LOzBxxviUDEbeHjTi"
     
-    static func signIn(user:String, password: String) -> URLComponents {
-        let timestamp = Date().timeIntervalSince1970
+    static func signIn() -> URLComponents {
+        //let timestamp = Date().timeIntervalSince1970
         
         var urlComponent = URLComponents()
         urlComponent.scheme = self.apiScheme
         urlComponent.host = self.apiHost
-        urlComponent.path = "authenticate"
-        urlComponent.queryItems = [
-            URLQueryItem(name: "apiKey", value: self.apiKeyPub),
-            URLQueryItem(name: "ts", value: String(timestamp)),
-            URLQueryItem(name: "ctrl", value: getControl(timestamp: timestamp)),
-            URLQueryItem(name: "email", value: user),
-            URLQueryItem(name: "password", value: password)
-        ]
+        urlComponent.path = "/api/authenticate"
+//        urlComponent.queryItems = [
+//            URLQueryItem(name: "apiKey", value: self.apiKeyPub),
+//            URLQueryItem(name: "ts", value: String(timestamp)),
+//            URLQueryItem(name: "ctrl", value: getControl(timestamp: timestamp)),
+//            URLQueryItem(name: "email", value: user),
+//            URLQueryItem(name: "password", value: password)
+//        ]
         
         return urlComponent
     }
