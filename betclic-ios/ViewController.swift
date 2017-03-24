@@ -24,8 +24,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: Any) {
-        let username = txUsername.text
-        let password = txPassword.text
+        let username = txUsername.text!
+        let password = txPassword.text!
+        
+        guard !username.isEmpty && !password.isEmpty else {
+            let authenticationService = AuthenticationService()
+            authenticationService.signIn(username: username, password: password, callback: { successful, response in
+                if successful {
+                    // register credentials and segue
+                } else {
+                    // Display error
+                }
+            })
+            
+            // Stop execution
+            return
+        }
     }
 
 }
