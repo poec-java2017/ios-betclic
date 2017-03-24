@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1804747F1E851BF000BCA299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804747E1E851BF000BCA299 /* AppDelegate.swift */; };
+		180474811E851BF000BCA299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474801E851BF000BCA299 /* ViewController.swift */; };
+		180474841E851BF000BCA299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180474821E851BF000BCA299 /* Main.storyboard */; };
+		180474861E851BF000BCA299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180474851E851BF000BCA299 /* Assets.xcassets */; };
+		180474891E851BF000BCA299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180474871E851BF000BCA299 /* LaunchScreen.storyboard */; };
+		180474941E851BF000BCA299 /* betclic_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474931E851BF000BCA299 /* betclic_iosTests.swift */; };
+		1804749F1E851BF000BCA299 /* betclic_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804749E1E851BF000BCA299 /* betclic_iosUITests.swift */; };
+		180474AD1E851D2E00BCA299 /* EventListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474AC1E851D2E00BCA299 /* EventListController.swift */; };
+		180474AF1E851E4D00BCA299 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474AE1E851E4D00BCA299 /* EventController.swift */; };
+		180474B11E851F3500BCA299 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B01E851F3500BCA299 /* AboutController.swift */; };
+		180474B31E851F9600BCA299 /* EventBetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474B21E851F9600BCA299 /* EventBetController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180474901E851BF000BCA299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180474731E851BF000BCA299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1804747A1E851BF000BCA299;
+			remoteInfo = "betclic-ios";
+		};
+		1804749B1E851BF000BCA299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180474731E851BF000BCA299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1804747A1E851BF000BCA299;
+			remoteInfo = "betclic-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1804747B1E851BF000BCA299 /* betclic-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "betclic-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1804747E1E851BF000BCA299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180474801E851BF000BCA299 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180474831E851BF000BCA299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180474851E851BF000BCA299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180474881E851BF000BCA299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1804748A1E851BF000BCA299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1804748F1E851BF000BCA299 /* betclic-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "betclic-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180474931E851BF000BCA299 /* betclic_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betclic_iosTests.swift; sourceTree = "<group>"; };
+		180474951E851BF000BCA299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1804749A1E851BF000BCA299 /* betclic-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "betclic-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1804749E1E851BF000BCA299 /* betclic_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betclic_iosUITests.swift; sourceTree = "<group>"; };
+		180474A01E851BF000BCA299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180474AC1E851D2E00BCA299 /* EventListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListController.swift; sourceTree = "<group>"; };
+		180474AE1E851E4D00BCA299 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		180474B01E851F3500BCA299 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		180474B21E851F9600BCA299 /* EventBetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBetController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180474781E851BF000BCA299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1804748C1E851BF000BCA299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180474971E851BF000BCA299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180474721E851BF000BCA299 = {
+			isa = PBXGroup;
+			children = (
+				1804747D1E851BF000BCA299 /* betclic-ios */,
+				180474921E851BF000BCA299 /* betclic-iosTests */,
+				1804749D1E851BF000BCA299 /* betclic-iosUITests */,
+				1804747C1E851BF000BCA299 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1804747C1E851BF000BCA299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1804747B1E851BF000BCA299 /* betclic-ios.app */,
+				1804748F1E851BF000BCA299 /* betclic-iosTests.xctest */,
+				1804749A1E851BF000BCA299 /* betclic-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1804747D1E851BF000BCA299 /* betclic-ios */ = {
+			isa = PBXGroup;
+			children = (
+				180474B41E851FB900BCA299 /* controller */,
+				1804747E1E851BF000BCA299 /* AppDelegate.swift */,
+				180474801E851BF000BCA299 /* ViewController.swift */,
+				180474821E851BF000BCA299 /* Main.storyboard */,
+				180474851E851BF000BCA299 /* Assets.xcassets */,
+				180474871E851BF000BCA299 /* LaunchScreen.storyboard */,
+				1804748A1E851BF000BCA299 /* Info.plist */,
+			);
+			path = "betclic-ios";
+			sourceTree = "<group>";
+		};
+		180474921E851BF000BCA299 /* betclic-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				180474931E851BF000BCA299 /* betclic_iosTests.swift */,
+				180474951E851BF000BCA299 /* Info.plist */,
+			);
+			path = "betclic-iosTests";
+			sourceTree = "<group>";
+		};
+		1804749D1E851BF000BCA299 /* betclic-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1804749E1E851BF000BCA299 /* betclic_iosUITests.swift */,
+				180474A01E851BF000BCA299 /* Info.plist */,
+			);
+			path = "betclic-iosUITests";
+			sourceTree = "<group>";
+		};
+		180474B41E851FB900BCA299 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				180474AC1E851D2E00BCA299 /* EventListController.swift */,
+				180474AE1E851E4D00BCA299 /* EventController.swift */,
+				180474B01E851F3500BCA299 /* AboutController.swift */,
+				180474B21E851F9600BCA299 /* EventBetController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1804747A1E851BF000BCA299 /* betclic-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180474A31E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-ios" */;
+			buildPhases = (
+				180474771E851BF000BCA299 /* Sources */,
+				180474781E851BF000BCA299 /* Frameworks */,
+				180474791E851BF000BCA299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "betclic-ios";
+			productName = "betclic-ios";
+			productReference = 1804747B1E851BF000BCA299 /* betclic-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1804748E1E851BF000BCA299 /* betclic-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180474A61E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosTests" */;
+			buildPhases = (
+				1804748B1E851BF000BCA299 /* Sources */,
+				1804748C1E851BF000BCA299 /* Frameworks */,
+				1804748D1E851BF000BCA299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180474911E851BF000BCA299 /* PBXTargetDependency */,
+			);
+			name = "betclic-iosTests";
+			productName = "betclic-iosTests";
+			productReference = 1804748F1E851BF000BCA299 /* betclic-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180474991E851BF000BCA299 /* betclic-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180474A91E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosUITests" */;
+			buildPhases = (
+				180474961E851BF000BCA299 /* Sources */,
+				180474971E851BF000BCA299 /* Frameworks */,
+				180474981E851BF000BCA299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1804749C1E851BF000BCA299 /* PBXTargetDependency */,
+			);
+			name = "betclic-iosUITests";
+			productName = "betclic-iosUITests";
+			productReference = 1804749A1E851BF000BCA299 /* betclic-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180474731E851BF000BCA299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Xylphid Ltd";
+				TargetAttributes = {
+					1804747A1E851BF000BCA299 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					1804748E1E851BF000BCA299 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1804747A1E851BF000BCA299;
+					};
+					180474991E851BF000BCA299 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1804747A1E851BF000BCA299;
+					};
+				};
+			};
+			buildConfigurationList = 180474761E851BF000BCA299 /* Build configuration list for PBXProject "betclic-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180474721E851BF000BCA299;
+			productRefGroup = 1804747C1E851BF000BCA299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1804747A1E851BF000BCA299 /* betclic-ios */,
+				1804748E1E851BF000BCA299 /* betclic-iosTests */,
+				180474991E851BF000BCA299 /* betclic-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180474791E851BF000BCA299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180474891E851BF000BCA299 /* LaunchScreen.storyboard in Resources */,
+				180474861E851BF000BCA299 /* Assets.xcassets in Resources */,
+				180474841E851BF000BCA299 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1804748D1E851BF000BCA299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180474981E851BF000BCA299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180474771E851BF000BCA299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180474B31E851F9600BCA299 /* EventBetController.swift in Sources */,
+				180474811E851BF000BCA299 /* ViewController.swift in Sources */,
+				180474B11E851F3500BCA299 /* AboutController.swift in Sources */,
+				180474AD1E851D2E00BCA299 /* EventListController.swift in Sources */,
+				180474AF1E851E4D00BCA299 /* EventController.swift in Sources */,
+				1804747F1E851BF000BCA299 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1804748B1E851BF000BCA299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180474941E851BF000BCA299 /* betclic_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180474961E851BF000BCA299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1804749F1E851BF000BCA299 /* betclic_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180474911E851BF000BCA299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1804747A1E851BF000BCA299 /* betclic-ios */;
+			targetProxy = 180474901E851BF000BCA299 /* PBXContainerItemProxy */;
+		};
+		1804749C1E851BF000BCA299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1804747A1E851BF000BCA299 /* betclic-ios */;
+			targetProxy = 1804749B1E851BF000BCA299 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180474821E851BF000BCA299 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180474831E851BF000BCA299 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180474871E851BF000BCA299 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180474881E851BF000BCA299 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180474A11E851BF000BCA299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180474A21E851BF000BCA299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180474A41E851BF000BCA299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "betclic-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		180474A51E851BF000BCA299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "betclic-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		180474A71E851BF000BCA299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "betclic-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betclic-ios.app/betclic-ios";
+			};
+			name = Debug;
+		};
+		180474A81E851BF000BCA299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "betclic-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betclic-ios.app/betclic-ios";
+			};
+			name = Release;
+		};
+		180474AA1E851BF000BCA299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "betclic-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "betclic-ios";
+			};
+			name = Debug;
+		};
+		180474AB1E851BF000BCA299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "betclic-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.xylphid.betclic-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "betclic-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180474761E851BF000BCA299 /* Build configuration list for PBXProject "betclic-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180474A11E851BF000BCA299 /* Debug */,
+				180474A21E851BF000BCA299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180474A31E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180474A41E851BF000BCA299 /* Debug */,
+				180474A51E851BF000BCA299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		180474A61E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180474A71E851BF000BCA299 /* Debug */,
+				180474A81E851BF000BCA299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		180474A91E851BF000BCA299 /* Build configuration list for PBXNativeTarget "betclic-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180474AA1E851BF000BCA299 /* Debug */,
+				180474AB1E851BF000BCA299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180474731E851BF000BCA299 /* Project object */;
+}
