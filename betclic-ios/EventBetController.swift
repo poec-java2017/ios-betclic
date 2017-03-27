@@ -10,8 +10,11 @@ import Foundation
 import UIKit
 
 class EventBetController: UIViewController {
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()
     }
+    
 }
+
+
