@@ -61,7 +61,6 @@ class ViewController: UIViewController {
                     self.txUsername.layer.borderColor = UIColor.red.cgColor
                     self.txPassword.layer.borderWidth = 1.0
                     self.txPassword.layer.borderColor = UIColor.red.cgColor
-                    print("Error style setted")
                 }
             } else {
                 // Query error
