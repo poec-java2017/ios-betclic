@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
+
 class EventListController: UIViewController {
+    
+    //var delegate : EventListDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()

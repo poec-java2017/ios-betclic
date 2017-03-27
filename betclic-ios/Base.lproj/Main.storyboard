@@ -45,6 +45,7 @@
                                         </state>
                                         <connections>
                                             <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dwd-DW-8v3"/>
+                                            <segue destination="nRY-tH-r3m" kind="presentation" identifier="showEventList" id="U4Q-ku-2UN"/>
                                         </connections>
                                     </button>
                                 </subviews>

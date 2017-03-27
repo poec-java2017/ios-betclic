@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let publicKey = UserDefaults.standard.string(forKey: "publicKey")
+        let privateKey = UserDefaults.standard.string(forKey: "privateKey")
+        if (publicKey != "" && privateKey != "") {
+            performSegue(withIdentifier: "showEventList", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,19 +37,18 @@ class ViewController: UIViewController {
         let authenticationService = AuthenticationService()
         let authenticationQuery = AuthenticationQuery(email: username, password: password)
             authenticationService.signIn(query: authenticationQuery, callback: { successful, response in
-                if successful {
-                    // register credentials and segue
-                    print("Success")
-                } else {
-                    // Display error
-                    print("Error")
-                }
-            })
-            
-            // Stop execution
-            //return
-        //}
+            if successful {
+                // register credentials and segue
+                print("Success")
+                    
+                UserDefaults.standard.set(response!.publicKey, forKey: "publicKey")
+                UserDefaults.standard.set(response!.privateKey, forKey: "privateKey")
+                self.performSegue(withIdentifier: "showEventList", sender: nil)
+            } else {
+                // Display error
+                print("Error")
+            }
+        })
     }
 
 }
-
