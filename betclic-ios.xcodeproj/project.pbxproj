@@ -23,6 +23,12 @@
 		180474CD1E85553900BCA299 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474CC1E85553900BCA299 /* AuthenticationResponse.swift */; };
 		180474D01E856D3100BCA299 /* BaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474CF1E856D3100BCA299 /* BaseQuery.swift */; };
 		180474D21E856E2A00BCA299 /* AuthenticationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */; };
+		18BE29BC1E89107F00AF1E45 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE29BB1E89107F00AF1E45 /* Bet.swift */; };
+		18BE29BE1E8910B500AF1E45 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE29BD1E8910B500AF1E45 /* Event.swift */; };
+		18BE29C01E8910F900AF1E45 /* BetDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE29BF1E8910F900AF1E45 /* BetDataProvider.swift */; };
+		18BE29C31E89131A00AF1E45 /* myCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE29C21E89131A00AF1E45 /* myCalendar.swift */; };
+		18BE29C51E89149200AF1E45 /* goalEvent.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18BE29C41E89149200AF1E45 /* goalEvent.jpeg */; };
+		18BE29C71E89179800AF1E45 /* EventDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE29C61E89179800AF1E45 /* EventDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,12 @@
 		180474CC1E85553900BCA299 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		180474CF1E856D3100BCA299 /* BaseQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuery.swift; sourceTree = "<group>"; };
 		180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationQuery.swift; sourceTree = "<group>"; };
+		18BE29BB1E89107F00AF1E45 /* Bet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		18BE29BD1E8910B500AF1E45 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		18BE29BF1E8910F900AF1E45 /* BetDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetDataProvider.swift; sourceTree = "<group>"; };
+		18BE29C21E89131A00AF1E45 /* myCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCalendar.swift; sourceTree = "<group>"; };
+		18BE29C41E89149200AF1E45 /* goalEvent.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goalEvent.jpeg; sourceTree = "<group>"; };
+		18BE29C61E89179800AF1E45 /* EventDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 		1804747D1E851BF000BCA299 /* betclic-ios */ = {
 			isa = PBXGroup;
 			children = (
+				18BE29C11E89130800AF1E45 /* util */,
 				180474CA1E85549500BCA299 /* model */,
 				180474C51E854F9200BCA299 /* config */,
 				180474C01E854ED600BCA299 /* service */,
@@ -124,6 +137,7 @@
 				180474801E851BF000BCA299 /* ViewController.swift */,
 				180474821E851BF000BCA299 /* Main.storyboard */,
 				180474851E851BF000BCA299 /* Assets.xcassets */,
+				18BE29C41E89149200AF1E45 /* goalEvent.jpeg */,
 				180474871E851BF000BCA299 /* LaunchScreen.storyboard */,
 				1804748A1E851BF000BCA299 /* Info.plist */,
 			);
@@ -162,6 +176,8 @@
 		180474C01E854ED600BCA299 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				18BE29C61E89179800AF1E45 /* EventDataProvider.swift */,
+				18BE29BF1E8910F900AF1E45 /* BetDataProvider.swift */,
 				180474C11E854F8B00BCA299 /* AuthenticationService.swift */,
 			);
 			name = service;
@@ -179,8 +195,10 @@
 		180474CA1E85549500BCA299 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				180474CE1E856D1800BCA299 /* query */,
 				180474CB1E85549C00BCA299 /* response */,
+				180474CE1E856D1800BCA299 /* query */,
+				18BE29BB1E89107F00AF1E45 /* Bet.swift */,
+				18BE29BD1E8910B500AF1E45 /* Event.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -200,6 +218,14 @@
 				180474D11E856E2A00BCA299 /* AuthenticationQuery.swift */,
 			);
 			name = query;
+			sourceTree = "<group>";
+		};
+		18BE29C11E89130800AF1E45 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				18BE29C21E89131A00AF1E45 /* myCalendar.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +339,7 @@
 				180474891E851BF000BCA299 /* LaunchScreen.storyboard in Resources */,
 				180474861E851BF000BCA299 /* Assets.xcassets in Resources */,
 				180474841E851BF000BCA299 /* Main.storyboard in Resources */,
+				18BE29C51E89149200AF1E45 /* goalEvent.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,10 +371,15 @@
 				180474811E851BF000BCA299 /* ViewController.swift in Sources */,
 				180474B11E851F3500BCA299 /* AboutController.swift in Sources */,
 				180474AD1E851D2E00BCA299 /* EventListController.swift in Sources */,
+				18BE29BC1E89107F00AF1E45 /* Bet.swift in Sources */,
 				180474AF1E851E4D00BCA299 /* EventController.swift in Sources */,
+				18BE29C71E89179800AF1E45 /* EventDataProvider.swift in Sources */,
 				180474C41E854F8B00BCA299 /* ServiceConfig.swift in Sources */,
+				18BE29C01E8910F900AF1E45 /* BetDataProvider.swift in Sources */,
+				18BE29C31E89131A00AF1E45 /* myCalendar.swift in Sources */,
 				1804747F1E851BF000BCA299 /* AppDelegate.swift in Sources */,
 				180474C31E854F8B00BCA299 /* AuthenticationService.swift in Sources */,
+				18BE29BE1E8910B500AF1E45 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
