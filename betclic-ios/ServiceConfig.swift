@@ -34,7 +34,7 @@ class ServiceConfig {
     }
     
     // Return control value for api client
-    static func getControl(timestamp: Double) -> String {
+    static func getControl(timestamp: Int) -> String {
         let secureString = self.apiKeyPub + self.apiKeyPriv + String(timestamp)
         return secureString.sha1()
     }

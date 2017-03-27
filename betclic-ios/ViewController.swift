@@ -15,10 +15,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.txUsername.layer.borderWidth = 1
+        self.txUsername.layer.cornerRadius = 4.0
+        self.txUsername.layer.borderColor = UIColor.lightGray.cgColor
+        self.txPassword.layer.borderWidth = 1
+        self.txPassword.layer.cornerRadius = 4.0
+        self.txPassword.layer.borderColor = UIColor.lightGray.cgColor
+        
         // Do any additional setup after loading the view, typically from a nib.
         let publicKey = UserDefaults.standard.string(forKey: "publicKey")
         let privateKey = UserDefaults.standard.string(forKey: "privateKey")
-        if (publicKey != "" && privateKey != "") {
+        if (publicKey == "" && privateKey != "") {
             performSegue(withIdentifier: "showEventList", sender: nil)
         }
     }
@@ -36,17 +44,30 @@ class ViewController: UIViewController {
         //guard username.isEmpty || password.isEmpty else {
         let authenticationService = AuthenticationService()
         let authenticationQuery = AuthenticationQuery(email: username, password: password)
-            authenticationService.signIn(query: authenticationQuery, callback: { successful, response in
+        print("email : " + authenticationQuery.email)
+        print("password : " + authenticationQuery.password)
+        print("apiKey : " + authenticationQuery.apiKey)
+        authenticationService.signIn(query: authenticationQuery, callback: { successful, response in
             if successful {
-                // register credentials and segue
-                print("Success")
-                    
-                UserDefaults.standard.set(response!.publicKey, forKey: "publicKey")
-                UserDefaults.standard.set(response!.privateKey, forKey: "privateKey")
-                self.performSegue(withIdentifier: "showEventList", sender: nil)
+                if (response!.status == 202) {
+                    // Register credentials and segue
+                    UserDefaults.standard.set(response!.publicKey, forKey: "publicKey")
+                    UserDefaults.standard.set(response!.privateKey, forKey: "privateKey")
+                    self.performSegue(withIdentifier: "showEventList", sender: nil)
+                } else {
+                    // Wrong credentials
+                    print("Authentication failed")
+                    self.txUsername.layer.borderWidth = 1.0
+                    self.txUsername.layer.borderColor = UIColor.red.cgColor
+                    self.txPassword.layer.borderWidth = 1.0
+                    self.txPassword.layer.borderColor = UIColor.red.cgColor
+                    print("Error style setted")
+                }
             } else {
-                // Display error
+                // Query error
                 print("Error")
+                self.txUsername.layer.borderColor = UIColor.red.cgColor
+                self.txPassword.layer.borderColor = UIColor.red.cgColor
             }
         })
     }

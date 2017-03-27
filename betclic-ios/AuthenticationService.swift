@@ -24,9 +24,7 @@ class AuthenticationService {
         // Build request
         var request = URLRequest(url: urlSignIn)
         request.httpMethod = "POST"
-        request.httpBody = try? JSONSerialization.data(withJSONObject: query.serialize(), options: [])
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpBody = query.serialize().data(using: .utf8)
         
         // Execute api query
         debugPrint(urlSignIn)
@@ -42,7 +40,6 @@ class AuthenticationService {
             // Trying to parse json response
             if let json = try? JSONSerialization.jsonObject(with: d, options: []) as? [String: Any] {
                 
-                print("Response")
                 let response = AuthenticationResponse(json: json!)
                 // Return response
                 callback(true, response)

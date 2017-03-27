@@ -19,11 +19,12 @@ class AuthenticationQuery: BaseQuery {
         self.password = password
     }
     
-    override func serialize() -> [String: Any] {
-        var json: [String: Any] = super.serialize()
-        json["email"] = self.email
-        json["password"] = self.password
+//    override func serialize() -> [String: Any] {
+    override func serialize() -> String {
+//        var json: [String: Any] = super.serialize()
+//        json["email"] = self.email
+//        json["password"] = self.password
         
-        return json
+        return super.serialize() + "&email=\(self.email)&password=\(self.password)"
     }
 }

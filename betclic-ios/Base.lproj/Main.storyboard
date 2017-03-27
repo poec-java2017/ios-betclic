@@ -45,7 +45,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dwd-DW-8v3"/>
-                                            <segue destination="nRY-tH-r3m" kind="presentation" identifier="showEventList" id="U4Q-ku-2UN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -70,6 +69,7 @@
                     <connections>
                         <outlet property="txPassword" destination="ndb-aY-1cs" id="uaO-SA-KZg"/>
                         <outlet property="txUsername" destination="rfL-7d-BrL" id="Ofy-TV-AnY"/>
+                        <segue destination="nRY-tH-r3m" kind="presentation" identifier="showEventList" id="q3z-VD-dkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
