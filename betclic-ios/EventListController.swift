@@ -38,6 +38,18 @@ class EventListController: UIViewController {
     }
     
 }
+
+
+
+extension EventListController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let eventForRow = self.events[indexPath.row]
+        
+        self.performSegue(withIdentifier: "eventDetailsSegue", sender: eventForRow)
+    }
+    
+}
+
 extension EventListController : UITableViewDataSource{
     // Nombre de sections
     func numberOfSections(in tableView: UITableView) -> Int {

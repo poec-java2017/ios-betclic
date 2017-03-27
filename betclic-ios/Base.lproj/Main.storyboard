@@ -144,6 +144,7 @@
                                             <outlet property="imageSport" destination="QCz-tv-1DN" id="C7S-4s-NlR"/>
                                             <outlet property="teams" destination="HZS-6o-Bzp" id="7xj-JE-5xK"/>
                                             <outlet property="title" destination="7Wk-Aw-8uR" id="eG2-Et-Pud"/>
+                                            <segue destination="76J-Iq-lSE" kind="show" identifier="eventDetailsSegue" id="caX-Gm-xhS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

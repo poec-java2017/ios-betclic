@@ -15,10 +15,14 @@ class EventController: UIViewController {
     @IBOutlet weak var nameEquips: UILabel!
     @IBOutlet weak var quotation: UILabel!
     
-    var event = Event()
+    var event : Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let event = event else {
+            return
+        }
         
         //imageEvent.image =
         self.titleEvent.text = "\(event.nameMatch) : \(event.nameCompetition)"
@@ -26,7 +30,7 @@ class EventController: UIViewController {
         self.quotation.text = "host : \(event.coteEquip1) guest : \(event.coteEquip2) tie : \(event.coteTie)"
         
         DispatchQueue.main.async {
-            if let bannerUrl = URL(string: self.event.image), let imageData = NSData(contentsOf: bannerUrl) {
+            if let bannerUrl = URL(string: self.event!.image), let imageData = NSData(contentsOf: bannerUrl) {
                 self.imageEvent.image = UIImage(data: imageData as Data)
             } else {
                 self.imageEvent.image = UIImage(named: "goalEvent")
